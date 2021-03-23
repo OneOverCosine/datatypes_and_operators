@@ -35,10 +35,24 @@
 
 # count(substring) returns the number of times a substring appears in a string
 # count is case sensitive
-example_text = "some Text with a lot of text in it"
-print(example_text.count("text"))
-print(example_text.upper())
-print(example_text.lower())
-print(example_text.capitalize())
+# example_text = "some Text with a lot of text in it"
+# print(example_text.count("text"))
+# print(example_text.upper())
+# print(example_text.lower())
+# print(example_text.capitalize())
 
-print(example_text.replace(" ", "_"))
+# print(example_text.replace(" ", "_"))
+
+# Concatenation and Casting
+first_name = "Cringe"
+last_name = "Katalyst"
+age = 27
+
+#print(first_name + ' ' + last_name)
+#print(first_name, last_name) # prints the same as above, but works differently
+
+#print(first_name + ' ' + last_name + ' ' + str(age)) # will throw an error without str(age)
+#print(first_name, last_name, age) # works without casting as each item is treated as its own object
+
+# f strings - Used for formatting text
+print(f"{first_name} {last_name} is {age} years of age.")
